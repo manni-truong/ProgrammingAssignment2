@@ -35,7 +35,14 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve is an extension of R's solve function. Similarly to solve the function
+## retuns the inverse of a matrix. However rather than taking a matrix object, it needs
+## a makeCacheMatrix object (see above for implementation). When a makeCacheMatrix is passed
+## in, cacheSolve checks whether the inverse has already been calculated. If it has, 
+## the cached inverse is being returned. Else it will be calculated and cached.
+
+## Exmple use:
+# cacheSolve(mat) # mat is a makeCacheMatrix object
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
