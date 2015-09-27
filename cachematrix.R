@@ -12,6 +12,11 @@
 ## name to the function. 
 ## The functions can be accessed via the $ notation. 
 
+## Example use:
+# m <- matrix(rnorm(4), nrow = 2, ncol = 2) # creates new 2x2 matrix
+# mat <- makeCacheMatrix(m) # create new makeCacheMatrix
+# mat$get() # will return m matrix
+
 makeCacheMatrix <- function(x = matrix()) {
     
     i <- NULL # i for inverse
