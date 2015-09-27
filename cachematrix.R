@@ -1,7 +1,7 @@
 ## Manni Truong, WoodMac 2015
 
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix is an extension of R's matrix object, with in-built cache functionality
+## cacheSolve is an extension of R's solve function but takes a makeCacheMatrix object, it retuns the (cached) inverse matrix
 
 
 ## makeCacheMatrix is effectively an extension of the matrix object in R. It provides
