@@ -28,8 +28,6 @@ makeCacheMatrix <- function(x = matrix()) {
     }
     get <- function() x # just returns the matrix argument
     
-    hello <- function() print("Hello world.")
-    
     setinverse <- function(inverse) i <<- inverse # stores given inverse to i variable, does not calculate inverse matrix
     getinverse <- function() i # simply returns i
     
