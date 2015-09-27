@@ -3,7 +3,14 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+
+## makeCacheMatrix is effectively an extension of the matrix object in R. It provides
+## a cache functionality to avoid doing a calcuation that already has been done. In 
+## particular the inverse of a matrix is being cached.
+## To initialise a new object a matrix is passed in. The object has 4 functions (get, set,
+## getinverse, setinverse) that are exposed via a list mapping that maps the function   
+## name to the function. 
+## The functions can be accessed via the $ notation. 
 
 makeCacheMatrix <- function(x = matrix()) {
     
