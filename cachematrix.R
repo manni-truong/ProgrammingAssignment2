@@ -16,7 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
     }
     get <- function() x # just returns the matrix
     
-    list(get = get)
+    hello <- function() print("Hello world.")
+    
+    list(set = set, get = get, hello = hello)
     
 
 }
